@@ -1,32 +1,67 @@
 body{
-   background-image: url("bgpng.png");
-   background-size: 90%;
+   background-image: url("bgchat.png");
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: #C26A22;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    margin-bottom: 0px;
+    font-size: 3rem;
+    margin-top: 0;
+}
+.subtitle{
+    text-align:center;
+    color: #3E2723;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.7);
+    margin-bottom:40px;
+    font-size: 30px;
+    margin-top: 10px;
 }
 .outer-div{
     margin-top: 20vh;
-    width: 700px;
+    width: 800px;
     font-size: 18px;
-    height: 400px;
-   border: 2px solid black;
-   padding: 20px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-left: 25%;
-   flex-direction: column;
-   background: rgba(255, 255,255,0.8)}
+    height: 350px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(139,94,60,0.3);
+    border-radius: 20px;
+   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
 .msg-div {
     font-size: 28px;
     min-width: 600px;
     min-height: 100px;
     padding: 20px;
     margin: 10px;
-    border: 1px solid black;
     border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #D4A373;
+    color: #2C2C2C;
+    transition: opacity 1s ease;
 }
 .btn-div{
     cursor: pointer;
     margin-top: 80px;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+
 }
 .btn-div button{
     height: 40px;
@@ -34,17 +69,25 @@ body{
     border-radius: 10px;
     width: 200px;
     font-size: 20px;
-    margin-left: 60px;
+    background: #E67E22;
     color: white;
-    background-color: black;
+    border: none;
+    transition: 1s;
 }
-h6{
-    position: fixed;
-    bottom: 0;
+.btn-div button:hover{
+    background: #D35400;
+transform: translateY(-2px);
+scale: 1.2;
+}
+.copymsg {
     border-radius: 10px;
-    margin-left: 45%;
     opacity: 0;
     font-size: 20px;
     transition: 0.4s;
     background: transparent;
+    margin-left: 230px;
+    margin-top: 50px;
+    width: fit-content;
+    margin: 20px auto;
 }
+
