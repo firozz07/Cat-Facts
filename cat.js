@@ -28,3 +28,13 @@ function copyfact (){
 
 
 copy.addEventListener("click",copyfact);
+
+let coco=document.querySelector(".photo");
+coco.addEventListener("click",()=>{
+    window.open("coco.png");
+})
+
+let mango=document.querySelector(".photo2");
+mango.addEventListener("click",()=>{
+    window.open("mango.png");
+})
